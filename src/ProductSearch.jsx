@@ -13,9 +13,9 @@ export default function ProductSearch() {
 
       setLoading(true);
       try {
-        const res = await fetch(
-          `http://localhost:8080/complete?q=${encodeURIComponent(debouncedQuery)}`
-        );
+        const API_URL = process.env.REACT_APP_API_URL || "https://go-app-ug1p.onrender.com";
+
+        const res = await fetch(`${API_URL}/complete?q=${encodeURIComponent(query)}`);
         const data = await res.json();
         setResults(Array.isArray(data) ? data : []);
       } catch (err) {
