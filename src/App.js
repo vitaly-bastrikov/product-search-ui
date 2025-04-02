@@ -27,7 +27,7 @@ function App() {
     };
 
     fetchSuggestions();
-  }, [debouncedQuery]);
+  }, [debouncedQuery, query]);
 
   return (
     <div className="centered-container">
