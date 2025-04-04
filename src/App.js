@@ -32,6 +32,14 @@ function App() {
   return (
     <div className="centered-container">
       <div className="search-box">
+        <a
+          href="https://docs.google.com/document/d/1eH9XeKriKfMLX4zD5c6g22gx0M-7FzmsNn5uWWqLmo8/edit?tab=t.0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="how-it-works-link"
+        >
+          How it works?
+        </a>
         <h1 className="title">🧠 Semantic Search</h1>
         <div className="input-group">
           <input

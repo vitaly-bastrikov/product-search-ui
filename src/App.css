@@ -19,6 +19,7 @@ html, body, #root {
   width: 100%;
   max-width: 600px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 
 .title {
@@ -101,4 +102,20 @@ html, body, #root {
   font-size: 0.75rem;
   color: #888;
   margin-left: 6px;
+}
+
+.how-it-works-link {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.how-it-works-link:hover {
+  background-color: rgba(0, 123, 255, 0.1);
 }
