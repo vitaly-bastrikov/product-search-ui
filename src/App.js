@@ -49,11 +49,13 @@ function App() {
           {results.length > 0 ? (
             results.map((item, index) => (
               <div key={index} className="result-card">
-                <div>
-                  <strong>{item.name}</strong>
-                  <span className="badge"> {item.type}</span>
+                <div className="result-content">
+                  <div className="result-title">
+                    <strong>{item.name}</strong>
+                    <span className="type-badge">{item.type}</span>
+                  </div>
+                  <span className="score">Score: {item.score.toFixed(4)}</span>
                 </div>
-                <span className="score">Score: {item.score.toFixed(4)}</span>
               </div>
             ))
           ) : (
